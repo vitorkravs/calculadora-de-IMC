@@ -22,11 +22,11 @@
                 <div class="form-inputs"><!-- Início form-inputs -->
                     <div class="form-control">
                         <label for="height">altura: </label>
-                        <input type="text" name="height" id="height" placeholder="Exemplo: 1,75">
+                        <input type="text" name="height" id="height" placeholder="Exemplo: 1,75" required>
                     </div>
                     <div class="form-control">
                         <label for="weight">peso: </label>
-                        <input type="text" name="weight" id="weight" placeholder="Exemplo: 70,5">
+                        <input type="text" name="weight" id="weight" placeholder="Exemplo: 70,5" >
                     </div>
                 </div><!-- Fim form-inputs -->
                 <div class="action-control"><!-- Início action-control -->
@@ -36,7 +36,7 @@
             </form><!-- Fim imc-form -->
         </div><!-- Fim calc-container -->
 
-        <div id="result-container"> <!-- Início resul-container-->
+        <div id="result-container" class="hide"> <!-- Início resul-container-->
             <p id="imc-number">Seu IMC: <span></span></p>
             <p id="imc-info">Situação Atual: <span></span></p>
             <h3>Confira as classificações:</h3>
