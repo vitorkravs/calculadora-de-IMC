@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!---->
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div class="container"><!-- Início container -->
+
+        <div class="calc-container"><!-- Início calc-container -->
+            <h2>Calculadora de IMC</h2>
+            <form id="imc-form"><!-- Início imc-form -->
+                <div class="form-inputs"><!-- Início form-inputs -->
+                    <div class="form-control">
+                        <label for="height">altura: </label>
+                        <input type="text" name="height" id="height" placeholder="Exemplo: 1,75">
+                    </div>
+                    <div class="form-control">
+                        <label for="weight">peso: </label>
+                        <input type="text" name="weight" id="weight" placeholder="Exemplo: 70,5">
+                    </div>
+                </div><!-- Fim form-inputs -->
+                <div class="action-control"><!-- Início action-control -->
+                    <button id="calc-btn">Calcular</button>
+                    <button id="clear-btn">Limpar</button>
+                </div><!-- Fim action-control -->
+            </form><!-- Fim imc-form -->
+        </div><!-- Fim calc-container -->
+
+        <div id="resul-container" class="hide"> <!-- Início resul-container-->
+            <p id="imc-number">Seu IMC: <span></span></p>
+            <p id="imc-info">Situação Atual: <span></span></p>
+            <h3>Confira as classificações:</h3>
+            <div id="imc-table"><!-- Início imc-table -->
+                <div class="table-header"><!-- Início table-header-->
+                    <h4>IMC</h4>
+                    <h4>Classificação</h4>
+                    <h4>Obesidade</h4>
+                </div><!-- Fim table-header-->
+            </div><!-- Fim imc-table-->
+            <button id="back-btn">Voltar</button>
+        </div><!-- Fim resul-container -->
+    </div><!-- Fim container -->
+</body>
+</html>
